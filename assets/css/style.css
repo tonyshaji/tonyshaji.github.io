@@ -80,17 +80,16 @@ h6 {
   transition: all 0.5s;
   padding: 0 15px;
   /* background: #040b14; */
-  background: #141e30; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #243b55,
-    #141e30
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #243b55,
-    #141e30
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #141e30;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #243b55,
+      #141e30);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #243b55,
+      #141e30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   overflow-y: auto;
 }
@@ -179,7 +178,7 @@ h6 {
   list-style: none;
 }
 
-.nav-menu > ul > li {
+.nav-menu>ul>li {
   position: relative;
   white-space: nowrap;
 }
@@ -205,7 +204,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover > a {
+.nav-menu li:hover>a {
   text-decoration: none;
   color: #fff;
 }
@@ -213,7 +212,7 @@ h6 {
 .nav-menu a:hover i,
 .nav-menu .active i,
 .nav-menu .active:focus i,
-.nav-menu li:hover > a i {
+.nav-menu li:hover>a i {
   color: #149ddd;
 }
 
@@ -276,12 +275,10 @@ h6 {
   border-radius: 10px;
   box-shadow: 4px 4px 1px 4px rgba(0, 0, 0, 0.1);
   backdrop-filter: contrast(0.8);
-  background-image: linear-gradient(
-    -100deg,
-    rgb(9 13 70 / 44%),
-    rgb(5 5 12 / 70%) 100%,
-    rgb(8 9 30 / 10%) 80%
-  );
+  background-image: linear-gradient(-100deg,
+      rgb(9 13 70 / 44%),
+      rgb(5 5 12 / 70%) 100%,
+      rgb(8 9 30 / 10%) 80%);
 }
 
 #hero h1 {
@@ -488,6 +485,62 @@ section {
   background-color: #149ddd;
 }
 
+.skill-card {
+  display: block;
+  max-width: 165px;
+}
+.skill-name {
+  text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    color: #2b2e42;
+}
+
+.skill-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(131.83deg, #2a67b2 0%, #7c97c8 99.21%);
+  /* width: 300px; */
+  /* text-align: center; */
+  /* height: 300px; */
+  border-radius: 16px;
+  position: relative;
+  margin: 15px 15px 0 0;
+}
+
+/* .skill-icon:not(:last-child) {
+  margin-right: 100px;
+} */
+.skill-icon::before {
+  position: absolute;
+  content: "";
+  top: -2px;
+  bottom: -2px;
+  left: -2px;
+  right: -2px;
+  background-image: linear-gradient(312.25deg, #787bb9 0%, rgb(5 27 97 / 0%) 66.19%);
+  z-index: -1;
+  border-radius: 18px;
+}
+
+.inner {
+  margin: 1rem;
+  background-color: white;
+  box-shadow: 0 40px 80px #d9c8c5;
+  border-radius: 16px;
+  text-align: center;
+}
+.inner img {
+  object-fit: contain;
+  max-width: 75%;
+}
+
+/* .skill-icon> a {
+  height: 100px;
+  display: block;
+} */
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -633,7 +686,7 @@ section {
   background: rgba(20, 157, 221, 0.95);
 }
 
-.portfolio .portfolio-wrap .portfolio-links a + a {
+.portfolio .portfolio-wrap .portfolio-links a+a {
   border-left: 1px solid #37b3ed;
 }
 
@@ -666,10 +719,7 @@ section {
   position: relative;
 }
 
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -677,10 +727,7 @@ section {
   border: 1px solid #149ddd;
 }
 
-.portfolio-details
-  .portfolio-details-slider
-  .swiper-pagination
-  .swiper-pagination-bullet-active {
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #149ddd;
 }
 
@@ -703,7 +750,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li + li {
+.portfolio-details .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
@@ -974,7 +1021,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br + br {
+.contact .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
@@ -1074,11 +1121,11 @@ section {
   font-size: 15px;
 }
 
-.breadcrumbs ol li + li {
+.breadcrumbs ol li+li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li + li::before {
+.breadcrumbs ol li+li::before {
   display: inline-block;
   padding-right: 10px;
   color: #0e2442;
@@ -1112,17 +1159,16 @@ section {
   width: 300px;
   z-index: 9999;
   /* background: #040b14; */
-  background: #141e30; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #243b55,
-    #141e30
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #243b55,
-    #141e30
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #141e30;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right,
+      #243b55,
+      #141e30);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right,
+      #243b55,
+      #141e30);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #footer .copyright {
